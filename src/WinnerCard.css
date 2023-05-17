@@ -1,0 +1,40 @@
+.winnerCard {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+}
+
+.winnerCard .title {
+  font-size: 20px;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winnerCard ul.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.winnerCard ul.list li {
+  text-align: left;
+  background-color: #ff730d;
+  color: white;
+  border-bottom: 1px solid #414141;
+  padding: 0.7rem 0.2rem;
+}
+
+.winnerCard ul.list li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.logo {
+  height: 1em;
+  filter: brightness(0) invert(1);
+  padding: 0 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}

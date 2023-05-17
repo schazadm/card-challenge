@@ -5,38 +5,39 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.player {
+  margin-bottom: 20px;
+  padding: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player.turn {
+  border: dashed 1px;
+  border-color: rgba(224, 103, 216, 0.343);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  padding: 2em;
+  width: 100px;
+  height: 120px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.card.flipped {
+  background-color: gray;
+}
+
+.card.flipped:hover {
+  background-color: lightgray;
 }
